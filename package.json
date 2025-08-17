@@ -1,0 +1,20 @@
+{
+  "name": "episode_4",
+  "version": "1.0.0",
+  "description": "Food Delivery App",
+  "keywords": [
+    "Food",
+    "Delivery",
+    "App"
+  ],
+  "license": "ISC",
+  "author": "Anshu Jha",
+  "scripts": {
+    "test": "jest",
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
