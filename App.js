@@ -10,7 +10,7 @@ const functionalRoot = ReactDOM.createRoot(document.getElementById("root"));
 functionalRoot.render(<App />);
 
 const Header = () => {
-  return <div>
+  return <div className="header">
     <div className="logo">
       <img src="https://reactjs.org/logo-og.png" alt="Food Delivery App Logo" />
     </div>
