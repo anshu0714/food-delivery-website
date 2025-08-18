@@ -1,20 +1,30 @@
 {
   "name": "episode_4",
   "version": "1.0.0",
-  "description": "Food Delivery App",
+  "description": "Food delivery app",
   "keywords": [
     "Food",
     "Delivery",
     "App"
   ],
+  "homepage": "https://github.com/anshu0714/food-delivery-website#readme",
+  "bugs": {
+    "url": "https://github.com/anshu0714/food-delivery-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshu0714/food-delivery-website.git"
+  },
   "license": "ISC",
   "author": "Anshu Jha",
   "scripts": {
-    "test": "jest",
-    "start": "npx parcel index.html",
-    "build": "npx parcel build index.html"
+    "test": "jest"
   },
   "devDependencies": {
     "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }
