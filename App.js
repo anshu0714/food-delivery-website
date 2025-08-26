@@ -12,9 +12,10 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <li>Home</li>
-        <li>About</li>
-        <li>Contact Us</li>
-        <li>Cart</li>
+        <li>Browse Menu</li>
+        <li>Special Offers</li>
+        <li>Restaurants</li>
+        <li>Track Order</li>
       </div>
     </div>
   );
