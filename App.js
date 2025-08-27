@@ -26,16 +26,36 @@ const Body = () => {
     <div className="body">
       <div className="search-bar">search</div>
       {/* Restaurant Card */}
-      <RestaurantCard />
+      <div className="restaurant-container">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+      </div>
     </div>
   );
 };
 
 const RestaurantCard = () => {
-  return <div className="restaurant-card">
-    <h1>Meghana Foods</h1>
-    
-  </div>;
+  return (
+    <div className="restaurant-card">
+      <img
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2025/6/6/a009bdbf-d06c-4342-820c-f9ac37ab58a4_e21acc8c-dc4a-4177-b5e6-f4fc1ee2251e.jpg"
+        alt="res-logo"
+        className="res-logo"
+      />
+      <h1>Meghana Foods</h1>
+      <h4>Biryani, North Indian, Asian</h4>
+      <h4>4.4 stars</h4>
+      <h4>38 minutes</h4>
+    </div>
+  );
 };
 
 const App = () => {
