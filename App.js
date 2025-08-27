@@ -27,22 +27,27 @@ const Body = () => {
       <div className="search-bar">search</div>
       {/* Restaurant Card */}
       <div className="restaurant-container">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard
+          resName="Meghana Foods"
+          cuisine="Biryani, North India, Asian"
+          star="4.4"
+          time="38"
+        />
+        <RestaurantCard
+          resName="KFC"
+          cuisine="Burgers, Fast Food"
+          star="4.6"
+          time="20"
+        />
       </div>
     </div>
   );
 };
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+  // Destructuring props object
+  const { resName, cuisine, star, time } = props;
+
   return (
     <div className="restaurant-card">
       <img
@@ -50,10 +55,12 @@ const RestaurantCard = () => {
         alt="res-logo"
         className="res-logo"
       />
-      <h1>Meghana Foods</h1>
-      <h4>Biryani, North Indian, Asian</h4>
-      <h4>4.4 stars</h4>
-      <h4>38 minutes</h4>
+      {/* Without destructuring we use it like this */}
+      {/* <h1>{props.resName}</h1> */}
+      <h1>{resName}</h1>
+      <h4>{cuisine}</h4>
+      <h4>{star} stars</h4>
+      <h4>{time} minutes</h4>
     </div>
   );
 };
