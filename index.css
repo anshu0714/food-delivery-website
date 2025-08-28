@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -10,15 +14,43 @@
   height: 70px;
 }
 
+.nav-items-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 20px;
+}
+
 .nav-items {
   display: flex;
 }
 
 .nav-items li {
   list-style: none;
-  padding: 10px;
-  margin: 10px;
-  font-size: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.nav-items li:hover {
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #fc8a06;
+  color: #ffffff;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .search-bar {
@@ -37,8 +69,7 @@
   width: 250px;
   padding: 10px;
   background-color: #f3f3f3;
-    border: 1px solid #f3f3f3;
-
+  border: 1px solid #f3f3f3;
 }
 
 .restaurant-card:hover {
@@ -49,4 +80,53 @@
 .res-logo {
   height: 150px;
   width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  border: 1px solid black;
+  margin-top: 20px;
+  min-height: 400px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.tag-line {
+  font-size: 16px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.title-color {
+  color: #fc8a06;
+}
+
+.sub-title {
+  font-size: 12px;
+}
+
+.postcode {
+  position: relative;
+}
+
+.postcode-input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.find-food-btn {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fc8a06;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  right: 0;
 }
