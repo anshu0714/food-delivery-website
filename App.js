@@ -10,13 +10,42 @@ const Header = () => {
           alt="Food Delivery App Logo"
         />
       </div>
-      <div className="nav-items">
-        <li>Home</li>
-        <li>Browse Menu</li>
-        <li>Special Offers</li>
-        <li>Restaurants</li>
-        <li>Track Order</li>
+      <div className="nav-items-container">
+        <ul className="nav-items">
+          <li>Home</li>
+          <li>Browse Menu</li>
+          <li>Special Offers</li>
+          <li>Restaurants</li>
+          <li>Track Order</li>
+        </ul>
+        <button className="login-btn" type="log-in">
+          Log In / Sign Up
+        </button>
       </div>
+    </div>
+  );
+};
+
+const Hero = () => {
+  return (
+    <div className="hero">
+      <div className="hero-text">
+        <p className="tag-line">
+          Order restaurant food, takeaway and groceries.
+        </p>
+        <h1 className="title">
+          Feast Your Senses, <br />{" "}
+          <span className="title-color">Fast and Fresh</span>
+        </h1>
+        <p className="sub-title">Enter a postcode to see what we deliver</p>
+        <div className="postcode">
+          <input className="postcode-input" type="text"></input>
+          <button className="find-food-btn" type="find-food">
+            Search
+          </button>
+        </div>
+      </div>
+      <div className="hero-image"></div>
     </div>
   );
 };
@@ -69,6 +98,7 @@ const App = () => {
   return (
     <div>
       <Header />
+      <Hero />
       <Body />
     </div>
   );
