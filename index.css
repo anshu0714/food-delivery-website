@@ -109,10 +109,6 @@ body {
   font-size: 12px;
 }
 
-.postcode {
-  position: relative;
-}
-
 .postcode-input {
   padding: 10px 20px;
   font-size: 16px;
@@ -120,13 +116,12 @@ body {
 }
 
 .find-food-btn {
-  position: absolute;
-  padding: 10px 20px;
+  margin-left: 10px;
+  padding: 12px 20px;
   font-size: 16px;
   background-color: #fc8a06;
   color: white;
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  right: 0;
 }

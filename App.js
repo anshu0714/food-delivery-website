@@ -39,8 +39,14 @@ const Hero = () => {
         </h1>
         <p className="sub-title">Enter a postcode to see what we deliver</p>
         <div className="postcode">
-          <input className="postcode-input" type="text"></input>
-          <button className="find-food-btn" type="find-food">
+          <label htmlFor="postcodeInput"></label>
+          <input
+            className="postcode-input"
+            type="text"
+            id="postcodeInput"
+            placeholder="Enter postcode"
+          ></input>
+          <button className="find-food-btn" type="submit">
             Search
           </button>
         </div>
