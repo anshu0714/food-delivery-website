@@ -51,7 +51,23 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="hero-image"></div>
+      <div className="hero-left">
+        <div className="review">
+          <h4>Order</h4>
+          <p>We’ve Received your order!</p>
+          <p>Awaiting Restaurant acceptance </p>
+        </div>
+        <div className="review">
+          <h4>Order</h4>
+          <p>We’ve Received your order!</p>
+          <p>Awaiting Restaurant acceptance </p>
+        </div>
+        <div className="review">
+          <h4>Order</h4>
+          <p>We’ve Received your order!</p>
+          <p>Awaiting Restaurant acceptance </p>
+        </div>
+      </div>
     </div>
   );
 };

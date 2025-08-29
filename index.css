@@ -87,9 +87,10 @@ body {
   border: 1px solid black;
   margin-top: 20px;
   min-height: 400px;
-  padding-left: 40px;
+  padding: 10px 40px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .tag-line {
@@ -124,4 +125,35 @@ body {
   border: none;
   border-radius: 30px;
   cursor: pointer;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+
+.review:nth-child(odd) {
+  align-self: flex-end;
+}
+
+.review:nth-child(even) {
+  align-self: flex-start;
+}
+
+.review {
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 240px;
+}
+
+.review h4 {
+  margin: 5px;
+}
+.review p {
+  font-size: 12px;
+  margin: 5px;
 }
