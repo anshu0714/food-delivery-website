@@ -223,14 +223,14 @@ const resList = [
     cuisine: "Chinese, Asian",
     star: "4.2",
     time: "26",
-    image: "https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg",
+    image: "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg",
   },
   {
     resName: "Giani's",
     cuisine: "Ice Cream, Desserts",
     star: "4.5",
     time: "12",
-    image: "",
+    image: "https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg",
   },
 ];
 
