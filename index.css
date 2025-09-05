@@ -57,33 +57,35 @@ body {
   margin: 10px;
 }
 
-.restaurant-container {
+.restaurant-container , .offers-section{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
-.restaurant-card {
+.restaurant-card, .offer-section {
   width: 250px;
   padding: 10px;
-  background-color: #f3f3f3;
+  background-color: #fbfbfb;
+  border-radius: 5px;
   border: 1px solid #f3f3f3;
+  box-shadow:  0.5px 0.5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.restaurant-card:hover {
+.restaurant-card:hover, .offer-section:hover{
   border: 1px solid black;
   cursor: pointer;
 }
 
-.res-logo {
+.res-logo, .offer-image {
   height: 150px;
   width: 100%;
 }
 
 /* Hero Section */
 .hero {
-  background-color: #f3f3f3;
+  background-color: #fafafa;
   margin-top: 20px;
   min-height: 400px;
   padding: 10px 40px;

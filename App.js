@@ -77,14 +77,17 @@ const Hero = () => {
 const Body = () => {
   return (
     <div className="body">
-      <div className="search-bar">search</div>
+      <div className="search-bar">Search</div>
+      <div className="offers-section">
+        {offersList.map((offer, index) => (
+          <OffersSection key={index} offersData={offer} />
+        ))}
+      </div>
       {/* Restaurant Card */}
       <div className="restaurant-container">
-        <div className="restaurant-container">
           {resList.map((restaurant, index) => (
             <RestaurantCard key={index} resData={restaurant} />
           ))}
-        </div>
       </div>
     </div>
   );
@@ -181,14 +184,16 @@ const resList = [
     cuisine: "Momos, Fast Food",
     star: "4.2",
     time: "16",
-    image: "https://images.pexels.com/photos/33670191/pexels-photo-33670191.jpeg",
+    image:
+      "https://images.pexels.com/photos/33670191/pexels-photo-33670191.jpeg",
   },
   {
     resName: "Faasos",
     cuisine: "Rolls, North Indian",
     star: "4.4",
     time: "22",
-    image: "https://images.pexels.com/photos/33709307/pexels-photo-33709307.jpeg",
+    image:
+      "https://images.pexels.com/photos/33709307/pexels-photo-33709307.jpeg",
   },
   {
     resName: "Behrouz Biryani",
@@ -216,7 +221,8 @@ const resList = [
     cuisine: "Desserts, Waffles",
     star: "4.7",
     time: "19",
-    image: "https://media.istockphoto.com/id/1382005630/photo/chocolate-waffle.jpg?b=1&s=612x612&w=0&k=20&c=dLbcyJONf7ZenmKbFmVbA_UNmTh0nXunJpDhJjTEvEs=",
+    image:
+      "https://media.istockphoto.com/id/1382005630/photo/chocolate-waffle.jpg?b=1&s=612x612&w=0&k=20&c=dLbcyJONf7ZenmKbFmVbA_UNmTh0nXunJpDhJjTEvEs=",
   },
   {
     resName: "Chinese Wok",
@@ -234,6 +240,33 @@ const resList = [
   },
 ];
 
+const offersList = [
+  {
+    name: "KFC",
+    category: "Restaurant",
+    offer: "20%",
+    image: "https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg",
+  },
+  {
+    name: "Starbucks",
+    category: "Cafe",
+    offer: "15%",
+    image: "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg",
+  },
+  {
+    name: "Domino's Pizza",
+    category: "Restaurant",
+    offer: "25%",
+    image: "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg",
+  },
+  {
+    name: "Cafe Coffee Day",
+    category: "Cafe",
+    offer: "10%",
+    image: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg",
+  },
+];
+
 const RestaurantCard = ({ resData }) => {
   return (
     <div className="restaurant-card">
@@ -244,6 +277,23 @@ const RestaurantCard = ({ resData }) => {
       <h4>{resData.cuisine}</h4>
       <h4>{resData.star} stars</h4>
       <h4>{resData.time} minutes</h4>
+    </div>
+  );
+};
+
+const OffersSection = () => {
+  return (
+    <div className="offers-section">
+      {offersList.map((offer, index) => (
+        <div key={index} className="offers-card">
+          <img src={offer.image} alt={offer.name} className="offer-image" />
+          <div className="offer-details">
+            <h3>{offer.name}</h3>
+            <p>{offer.category}</p>
+            <span className="offer-percent">{offer.offer} Off</span>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
