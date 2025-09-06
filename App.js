@@ -94,9 +94,12 @@ const Body = () => (
   <div className="body">
     <div className="search-bar">Search</div>
     <div className="offers-section">
-      {offersList.map((offer, index) => (
-        <OffersCard key={index} offer={offer} />
-      ))}
+      <h2>Up to -40% 🎊 Exclusive deals</h2>
+      <div className="offers-container">
+        {offersList.map((offer, index) => (
+          <OffersCard key={index} offer={offer} />
+        ))}
+      </div>
     </div>
     <div className="restaurant-container">
       {resList.map((restaurant, index) => (
