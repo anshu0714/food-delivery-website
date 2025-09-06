@@ -1,7 +1,9 @@
+/* ===== Base Styles ===== */
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* ===== Header and Navigation ===== */
 .header {
   display: flex;
   justify-content: space-between;
@@ -52,38 +54,46 @@ body {
   color: #000000;
 }
 
+/* ===== Search Bar ===== */
 .search-bar {
   padding: 10px;
   margin: 10px;
 }
 
-.restaurant-container , .offers-section{
+/* ===== Offers and Restaurant Sections ===== */
+.restaurant-container,
+.offers-section {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
-.restaurant-card, .offer-section {
+/* ===== Card Components ===== */
+.restaurant-card,
+.offers-card {
   width: 250px;
   padding: 10px;
   background-color: #fbfbfb;
   border-radius: 5px;
   border: 1px solid #f3f3f3;
-  box-shadow:  0.5px 0.5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.restaurant-card:hover, .offer-section:hover{
+.restaurant-card:hover,
+.offers-card:hover {
   border: 1px solid black;
   cursor: pointer;
 }
 
-.res-logo, .offer-image {
+.res-logo,
+.offer-image {
   height: 150px;
   width: 100%;
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
 .hero {
   background-color: #fafafa;
   margin-top: 20px;
@@ -111,6 +121,7 @@ body {
   font-size: 12px;
 }
 
+/* ===== Postcode Search ===== */
 .postcode-input {
   padding: 10px 20px;
   font-size: 16px;
@@ -128,6 +139,7 @@ body {
   cursor: pointer;
 }
 
+/* ===== Hero Reviews ===== */
 .hero-left {
   display: flex;
   flex-direction: column;
@@ -154,6 +166,7 @@ body {
 .review h4 {
   margin: 5px;
 }
+
 .review p {
   font-size: 12px;
   margin: 5px;
