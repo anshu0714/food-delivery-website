@@ -78,23 +78,31 @@ const RestaurantCard = ({ resData }) => (
   </div>
 );
 
-// FIX: Add return statement & accept only 'offer', NOT index
 const OffersCard = ({ offer }) => (
   <div className="offers-card">
     <img src={offer.image} alt={offer.name} className="offer-image" />
+    <span className="offer-percent">-{offer.offer}</span>
     <div className="offer-details">
-      <h3>{offer.name}</h3>
-      <p>{offer.category}</p>
-      <span className="offer-percent">{offer.offer} Off</span>
+      <p className="category">{offer.category}</p>
+      <h3 className="name">{offer.name}</h3>
     </div>
   </div>
 );
 
 const Body = () => (
   <div className="body">
-    <div className="search-bar">Search</div>
     <div className="offers-section">
-      <h2>Up to -40% 🎊 Exclusive deals</h2>
+      <div className="offer-heading">
+        <h2>Up to -40% 🎊 Exclusive deals</h2>
+        <div className="offer-toggle">
+          <ul className="offer-menu">
+            <li className="offer-menu-items offer-menu-active">Pizza</li>
+            <li className="offer-menu-items">Coffee</li>
+            <li className="offer-menu-items">Chicken</li>
+            <li className="offer-menu-items">Others</li>
+          </ul>
+        </div>
+      </div>
       <div className="offers-container">
         {offersList.map((offer, index) => (
           <OffersCard key={index} offer={offer} />
