@@ -284,7 +284,7 @@ body {
   margin: 0;
 }
 
-/* ===== Offers Section ===== */
+/* ===== Popular Categories Section ===== */
 .popular-categories {
   margin: 0px 30px 60px 30px;
 }
@@ -324,4 +324,37 @@ body {
   font-size: 12px;
   font-weight: normal;
   color: #fc8a06;
+}
+
+/* ===== Popular Restaurant Section ===== */
+.popular-restaurants {
+  margin: 0px 30px 60px 30px;
+}
+
+.popular-res-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.popular-res-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fc8a06;
+}
+
+.popular-res-image {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.popular-res-card .res-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
 }

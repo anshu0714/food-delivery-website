@@ -1,6 +1,6 @@
 // App.js
 import ReactDOM from "react-dom/client";
-import { resList, offersList, popularCategories } from "./AppData";
+import { resList, offersList, popularCategories, popularRestaurants } from "./AppData";
 
 const Header = () => (
   <div className="header">
@@ -99,6 +99,17 @@ const PopularCategoriesCard = ({ popular }) => (
   </div>
 );
 
+const PopularRestaurantsCard = ({ popular }) => (
+  <div className="popular-res-card">
+    <img
+      src={popular.image}
+      alt={popular.image}
+      className="popular-res-image"
+    />
+    <p className="res-name">{popular.name}</p>
+  </div>
+);
+
 const Body = () => (
   <div className="body">
     <div className="offers-section">
@@ -124,6 +135,14 @@ const Body = () => (
       <div className="popular-container">
         {popularCategories.map((popular, index) => (
           <PopularCategoriesCard key={index} popular={popular} />
+        ))}
+      </div>
+    </div>
+    <div className="popular-restaurants">
+      <h2>Popular Restaurants</h2>
+      <div className="popular-res-container">
+        {popularRestaurants.map((popular, index) => (
+          <PopularRestaurantsCard key={index} popular={popular} />
         ))}
       </div>
     </div>

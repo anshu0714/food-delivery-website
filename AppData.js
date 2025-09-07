@@ -60,7 +60,8 @@ export const resList = [
     cuisine: "Indian, Sweets",
     star: "4.5",
     time: "20",
-    image: "https://images.pexels.com/photos/18488304/pexels-photo-18488304.jpeg",
+    image:
+      "https://images.pexels.com/photos/18488304/pexels-photo-18488304.jpeg",
   },
   {
     resName: "Bikanervala",
@@ -81,21 +82,24 @@ export const resList = [
     cuisine: "BBQ, North Indian",
     star: "4.6",
     time: "30",
-    image: "https://images.pexels.com/photos/53148/shish-kebab-meat-skewer-vegetable-skewer-meat-products-53148.jpeg",
+    image:
+      "https://images.pexels.com/photos/53148/shish-kebab-meat-skewer-vegetable-skewer-meat-products-53148.jpeg",
   },
   {
     resName: "Wow! Momo",
     cuisine: "Momos, Fast Food",
     star: "4.2",
     time: "16",
-    image: "https://images.pexels.com/photos/33670191/pexels-photo-33670191.jpeg",
+    image:
+      "https://images.pexels.com/photos/33670191/pexels-photo-33670191.jpeg",
   },
   {
     resName: "Faasos",
     cuisine: "Rolls, North Indian",
     star: "4.4",
     time: "22",
-    image: "https://images.pexels.com/photos/33709307/pexels-photo-33709307.jpeg",
+    image:
+      "https://images.pexels.com/photos/33709307/pexels-photo-33709307.jpeg",
   },
   {
     resName: "Behrouz Biryani",
@@ -123,7 +127,8 @@ export const resList = [
     cuisine: "Desserts, Waffles",
     star: "4.7",
     time: "19",
-    image: "https://media.istockphoto.com/id/1382005630/photo/chocolate-waffle.jpg?b=1&s=612x612&w=0&k=20&c=dLbcyJONf7ZenmKbFmVbA_UNmTh0nXunJpDhJjTEvEs=",
+    image:
+      "https://media.istockphoto.com/id/1382005630/photo/chocolate-waffle.jpg?b=1&s=612x612&w=0&k=20&c=dLbcyJONf7ZenmKbFmVbA_UNmTh0nXunJpDhJjTEvEs=",
   },
   {
     resName: "Chinese Wok",
@@ -181,7 +186,8 @@ export const popularCategories = [
     number: "4",
   },
   {
-    image: "https://images.pexels.com/photos/30472961/pexels-photo-30472961.jpeg",
+    image:
+      "https://images.pexels.com/photos/30472961/pexels-photo-30472961.jpeg",
     category: "Salads",
     number: "24",
   },
@@ -204,5 +210,13 @@ export const popularCategories = [
     image: "https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg",
     category: "Soups",
     number: "14",
-  }
+  },
+];
+
+export const popularRestaurants = [
+  {
+    name: "McDonald's London",
+    image:
+      "https://images.unsplash.com/photo-1602400236316-f5e3b6d2314c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWNkb25hbGRzfGVufDB8fDB8fHww",
+  },
 ];
