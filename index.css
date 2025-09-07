@@ -281,3 +281,43 @@ body {
   font-weight: bold;
   margin: 0;
 }
+
+/* ===== Offers Section ===== */
+.popular-categories {
+  margin: 0px 30px 60px 30px;
+}
+
+.popular-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.popular-card {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+.popular-image {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.popular-details {
+  padding-left: 10px;
+  margin: 10px 0px;
+}
+
+.popular-details .category{
+  margin: 0px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.popular-details .number{
+  margin: 0px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #fc8a06;
+}

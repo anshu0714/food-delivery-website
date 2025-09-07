@@ -173,3 +173,11 @@ export const offersList = [
     image: "https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg",
   },
 ];
+
+export const popularCategories = [
+  {
+    image: "https://images.pexels.com/photos/551991/pexels-photo-551991.jpeg",
+    category: "Burgers and Fast Food",
+    number: "4",
+  }
+];
