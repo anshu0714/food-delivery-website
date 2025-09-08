@@ -141,30 +141,30 @@ const Body = () => (
         </div>
       </div>
       <div className="offers-container">
-        {offersList.map((offer, index) => (
-          <OffersCard key={index} offers={offer} />
+        {offersList.map((offer) => (
+          <OffersCard key={offer.id} offers={offer} />
         ))}
       </div>
     </div>
     <div className="popular-categories">
       <h2>Popular Categories 🤩</h2>
       <div className="popular-container">
-        {popularCategories.map((popular, index) => (
-          <PopularCategoriesCard key={index} popular={popular} />
+        {popularCategories.map((popular) => (
+          <PopularCategoriesCard key={popular.id} popular={popular} />
         ))}
       </div>
     </div>
     <div className="popular-restaurants">
       <h2>Popular Restaurants</h2>
       <div className="popular-res-container">
-        {popularRestaurants.map((popular, index) => (
-          <PopularRestaurantsCard key={index} popular={popular} />
+        {popularRestaurants.map((popular) => (
+          <PopularRestaurantsCard key={popular.id} popular={popular} />
         ))}
       </div>
     </div>
     <div className="restaurant-container">
-      {resList.map((restaurant, index) => (
-        <RestaurantCard key={index} resData={restaurant} />
+      {resList.map((restaurant) => (
+        <RestaurantCard key={restaurant.id} resData={restaurant} />
       ))}
     </div>
   </div>

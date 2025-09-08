@@ -1,12 +1,14 @@
 export const resList = [
   {
+    id: 1,
     resName: "KFC",
     cuisine: "Burgers, Fast Food",
     star: "4.6",
     time: "20",
     image: "https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg",
   },
-  {
+  { 
+    id: 2,
     resName: "McDonald's",
     cuisine: "Burgers, Beverages",
     star: "4.4",
@@ -14,6 +16,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg",
   },
   {
+    id: 3,
     resName: "Domino's Pizza",
     cuisine: "Pizza, Fast Food",
     star: "4.2",
@@ -21,6 +24,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg",
   },
   {
+    id: 4,
     resName: "Subway",
     cuisine: "Healthy Food, Sandwiches",
     star: "4.3",
@@ -28,6 +32,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg",
   },
   {
+    id: 5,
     resName: "Burger King",
     cuisine: "Burgers, Beverages",
     star: "4.1",
@@ -35,6 +40,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/1556698/pexels-photo-1556698.jpeg",
   },
   {
+    id: 6,
     resName: "Pizza Hut",
     cuisine: "Pizza, Fast Food",
     star: "4.0",
@@ -42,6 +48,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/367915/pexels-photo-367915.jpeg",
   },
   {
+    id: 7,
     resName: "Starbucks",
     cuisine: "Coffee, Beverages",
     star: "4.7",
@@ -49,6 +56,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg",
   },
   {
+    id: 8,
     resName: "Taco Bell",
     cuisine: "Mexican, Fast Food",
     star: "4.2",
@@ -56,6 +64,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/2092507/pexels-photo-2092507.jpeg",
   },
   {
+    id: 9,
     resName: "Haldiram's",
     cuisine: "Indian, Sweets",
     star: "4.5",
@@ -64,6 +73,7 @@ export const resList = [
       "https://images.pexels.com/photos/18488304/pexels-photo-18488304.jpeg",
   },
   {
+    id: 10,
     resName: "Bikanervala",
     cuisine: "North Indian, Mithai",
     star: "4.3",
@@ -71,6 +81,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/8887055/pexels-photo-8887055.jpeg",
   },
   {
+    id: 11,
     resName: "Cafe Coffee Day",
     cuisine: "Coffee, Snacks",
     star: "4.0",
@@ -78,6 +89,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg",
   },
   {
+    id: 12,
     resName: "Barbeque Nation",
     cuisine: "BBQ, North Indian",
     star: "4.6",
@@ -86,6 +98,7 @@ export const resList = [
       "https://images.pexels.com/photos/53148/shish-kebab-meat-skewer-vegetable-skewer-meat-products-53148.jpeg",
   },
   {
+    id: 13,
     resName: "Wow! Momo",
     cuisine: "Momos, Fast Food",
     star: "4.2",
@@ -94,6 +107,7 @@ export const resList = [
       "https://images.pexels.com/photos/33670191/pexels-photo-33670191.jpeg",
   },
   {
+    id: 14,
     resName: "Faasos",
     cuisine: "Rolls, North Indian",
     star: "4.4",
@@ -102,6 +116,7 @@ export const resList = [
       "https://images.pexels.com/photos/33709307/pexels-photo-33709307.jpeg",
   },
   {
+    id: 15,
     resName: "Behrouz Biryani",
     cuisine: "Biryani, Mughlai",
     star: "4.6",
@@ -109,6 +124,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/4910320/pexels-photo-4910320.jpeg",
   },
   {
+    id: 16,
     resName: "FreshMenu",
     cuisine: "Healthy Food, Salads",
     star: "4.1",
@@ -116,6 +132,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg",
   },
   {
+    id: 17,
     resName: "Chai Point",
     cuisine: "Tea, Snacks",
     star: "4.3",
@@ -123,6 +140,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg",
   },
   {
+    id: 18,
     resName: "The Belgian Waffle Co.",
     cuisine: "Desserts, Waffles",
     star: "4.7",
@@ -131,6 +149,7 @@ export const resList = [
       "https://media.istockphoto.com/id/1382005630/photo/chocolate-waffle.jpg?b=1&s=612x612&w=0&k=20&c=dLbcyJONf7ZenmKbFmVbA_UNmTh0nXunJpDhJjTEvEs=",
   },
   {
+    id: 19,
     resName: "Chinese Wok",
     cuisine: "Chinese, Asian",
     star: "4.2",
@@ -138,6 +157,7 @@ export const resList = [
     image: "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg",
   },
   {
+    id: 20,
     resName: "Giani's",
     cuisine: "Ice Cream, Desserts",
     star: "4.5",
@@ -148,30 +168,35 @@ export const resList = [
 
 export const offersList = [
   {
+    id: 1,
     name: "KFC",
     category: "Restaurant",
     offer: "20%",
     image: "https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg",
   },
   {
+    id: 2,
     name: "Starbucks",
     category: "Cafe",
     offer: "15%",
     image: "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg",
   },
   {
+    id: 3,
     name: "Domino's Pizza",
     category: "Restaurant",
     offer: "25%",
     image: "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg",
   },
   {
+    id: 4,
     name: "Cafe Coffee Day",
     category: "Cafe",
     offer: "20%",
     image: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg",
   },
   {
+    id: 5,
     name: "Giani's",
     category: "Cafe",
     offer: "12%",
@@ -181,32 +206,38 @@ export const offersList = [
 
 export const popularCategories = [
   {
+    id: 1,
     image: "https://images.pexels.com/photos/551991/pexels-photo-551991.jpeg",
     category: "Burgers and Fast Food",
     number: "4",
   },
   {
+    id: 2,
     image:
       "https://images.pexels.com/photos/30472961/pexels-photo-30472961.jpeg",
     category: "Salads",
     number: "24",
   },
   {
+    id: 3,
     image: "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg",
     category: "Pasta and Casuals",
     number: "32",
   },
   {
+    id: 4,
     image: "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg",
     category: "Pizzas",
     number: "10",
   },
   {
+    id: 5,
     image: "https://images.pexels.com/photos/2113556/pexels-photo-2113556.jpeg",
     category: "Breakfast",
     number: "5",
   },
   {
+    id: 6,
     image: "https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg",
     category: "Soups",
     number: "14",
@@ -215,6 +246,7 @@ export const popularCategories = [
 
 export const popularRestaurants = [
   {
+    id: 1,
     name: "McDonald's London",
     image:
       "https://images.unsplash.com/photo-1602400236316-f5e3b6d2314c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWNkb25hbGRzfGVufDB8fDB8fHww",
