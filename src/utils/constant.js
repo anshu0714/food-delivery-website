@@ -1,0 +1,1 @@
+export const LOGO_URL = "https://tse3.mm.bing.net/th/id/OIP.icy4vofXZVY6EVcy8J9HVAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3";

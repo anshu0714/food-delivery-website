@@ -1,4 +1,4 @@
-export const resList = [
+const resList = [
   {
     id: 1,
     resName: "KFC",
@@ -7,7 +7,7 @@ export const resList = [
     time: "20",
     image: "https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg",
   },
-  { 
+  {
     id: 2,
     resName: "McDonald's",
     cuisine: "Burgers, Beverages",
@@ -166,89 +166,4 @@ export const resList = [
   },
 ];
 
-export const offersList = [
-  {
-    id: 1,
-    name: "KFC",
-    category: "Restaurant",
-    offer: "20%",
-    image: "https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg",
-  },
-  {
-    id: 2,
-    name: "Starbucks",
-    category: "Cafe",
-    offer: "15%",
-    image: "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg",
-  },
-  {
-    id: 3,
-    name: "Domino's Pizza",
-    category: "Restaurant",
-    offer: "25%",
-    image: "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg",
-  },
-  {
-    id: 4,
-    name: "Cafe Coffee Day",
-    category: "Cafe",
-    offer: "20%",
-    image: "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg",
-  },
-  {
-    id: 5,
-    name: "Giani's",
-    category: "Cafe",
-    offer: "12%",
-    image: "https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg",
-  },
-];
-
-export const popularCategories = [
-  {
-    id: 1,
-    image: "https://images.pexels.com/photos/551991/pexels-photo-551991.jpeg",
-    category: "Burgers and Fast Food",
-    number: "4",
-  },
-  {
-    id: 2,
-    image:
-      "https://images.pexels.com/photos/30472961/pexels-photo-30472961.jpeg",
-    category: "Salads",
-    number: "24",
-  },
-  {
-    id: 3,
-    image: "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg",
-    category: "Pasta and Casuals",
-    number: "32",
-  },
-  {
-    id: 4,
-    image: "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg",
-    category: "Pizzas",
-    number: "10",
-  },
-  {
-    id: 5,
-    image: "https://images.pexels.com/photos/2113556/pexels-photo-2113556.jpeg",
-    category: "Breakfast",
-    number: "5",
-  },
-  {
-    id: 6,
-    image: "https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg",
-    category: "Soups",
-    number: "14",
-  },
-];
-
-export const popularRestaurants = [
-  {
-    id: 1,
-    name: "McDonald's London",
-    image:
-      "https://images.unsplash.com/photo-1602400236316-f5e3b6d2314c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWNkb25hbGRzfGVufDB8fDB8fHww",
-  },
-];
+export default resList;
