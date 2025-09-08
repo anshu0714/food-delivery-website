@@ -1,6 +1,11 @@
 // App.js
 import ReactDOM from "react-dom/client";
-import { resList, offersList, popularCategories, popularRestaurants } from "./AppData";
+import {
+  resList,
+  offersList,
+  popularCategories,
+  popularRestaurants,
+} from "./AppData";
 
 const Header = () => (
   <div className="header">
@@ -68,47 +73,58 @@ const Hero = () => (
   </div>
 );
 
-const RestaurantCard = ({ resData }) => (
-  <div className="restaurant-card">
-    <img src={resData.image} alt={resData.resName} className="res-logo" />
-    <h1>{resData.resName}</h1>
-    <h4>{resData.cuisine}</h4>
-    <h4>{resData.star} stars</h4>
-    <h4>{resData.time} minutes</h4>
-  </div>
-);
+const RestaurantCard = ({ resData }) => {
+  const { image, resName, cuisine, star, time } = resData;
 
-const OffersCard = ({ offer }) => (
-  <div className="offers-card">
-    <img src={offer.image} alt={offer.name} className="offer-image" />
-    <span className="offer-percent">-{offer.offer}</span>
-    <div className="offer-details">
-      <p className="category">{offer.category}</p>
-      <h3 className="name">{offer.name}</h3>
+  return (
+    <div className="restaurant-card">
+      <img src={image} alt={resName} className="res-logo" />
+      <h1>{resName}</h1>
+      <h4>{cuisine}</h4>
+      <h4>{star} stars</h4>
+      <h4>{time} minutes</h4>
     </div>
-  </div>
-);
+  );
+};
 
-const PopularCategoriesCard = ({ popular }) => (
-  <div className="popular-card">
-    <img src={popular.image} alt={popular.image} className="popular-image" />
-    <div className="popular-details">
-      <p className="category">{popular.category}</p>
-      <h3 className="number">{popular.number} Restaurants</h3>
+const OffersCard = ({ offers }) => {
+  const { image, name, offer, category } = offers;
+  return (
+    <div className="offers-card">
+      <img src={image} alt={name} className="offer-image" />
+      <span className="offer-percent">-{offer}</span>
+      <div className="offer-details">
+        <p className="category">{category}</p>
+        <h3 className="name">{name}</h3>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
-const PopularRestaurantsCard = ({ popular }) => (
-  <div className="popular-res-card">
-    <img
-      src={popular.image}
-      alt={popular.image}
-      className="popular-res-image"
-    />
-    <p className="res-name">{popular.name}</p>
-  </div>
-);
+const PopularCategoriesCard = ({ popular }) => {
+  const { image, category, number } = popular;
+
+  return (
+    <div className="popular-card">
+      <img src={image} alt={category} className="popular-image" />
+      <div className="popular-details">
+        <p className="category">{category}</p>
+        <h3 className="number">{number} Restaurants</h3>
+      </div>
+    </div>
+  );
+};
+
+const PopularRestaurantsCard = ({ popular }) => {
+  const { image, name } = popular;
+
+  return (
+    <div className="popular-res-card">
+      <img src={image} alt={name} className="popular-res-image" />
+      <p className="res-name">{name}</p>
+    </div>
+  );
+};
 
 const Body = () => (
   <div className="body">
@@ -126,7 +142,7 @@ const Body = () => (
       </div>
       <div className="offers-container">
         {offersList.map((offer, index) => (
-          <OffersCard key={index} offer={offer} />
+          <OffersCard key={index} offers={offer} />
         ))}
       </div>
     </div>
