@@ -13,6 +13,7 @@ import { useState } from "react";
 const Body = () => {
   // State Variable
   const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+
   return (
     <div className="body">
       <Hero />
