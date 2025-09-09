@@ -40,15 +40,6 @@ const offersList = [
     type: "Dessert",
     image: "https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg",
   },
-  {
-    id: 6,
-    name: "Giani's",
-    category: "Cafe",
-
-    offer: "12%",
-    type: "Milk",
-    image: "https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg",
-  },
 ];
 
 export default offersList;
