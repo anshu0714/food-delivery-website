@@ -358,3 +358,55 @@ body {
   font-weight: bold;
   color: white;
 }
+
+/* ===== Download Container Section ===== */
+.download-container{
+  margin: 30px;
+  min-height: 400px;
+  background-color: #EEEEEE;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-container img{
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+.download-details{
+  margin-left: 30px;
+}
+
+.download-details h2{
+  font-size: 48px;
+  font-weight: 800;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  text-align: center;
+}
+
+.download-details h3{
+  background-color: #000000;
+  font-size: 34px;
+  color: white;
+  text-align: center;
+  padding: 10px 40px;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+  margin: 20px 0px 20px 0px;
+  font-weight: normal;
+}
+
+
+.styled-text{
+  color: #fc8a06;
+  text-decoration: underline;
+}
+
+.download-details p{
+  font-size: 18px;
+  text-align: center;
+}

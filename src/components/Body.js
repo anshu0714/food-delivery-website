@@ -9,6 +9,7 @@ import PopularCategoriesCard from "./PopularCategoriesCard";
 import PopularRestaurantsCard from "./PopularRestaurantsCard";
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
+import { HOME_IMG_URL } from "../utils/constant.js";
 
 const Body = () => {
   // State Variable
@@ -42,6 +43,17 @@ const Body = () => {
           {popularRestaurants.map((popular) => (
             <PopularRestaurantsCard key={popular.id} popular={popular} />
           ))}
+        </div>
+      </div>
+      <div className="download-container">
+        <img
+          src={HOME_IMG_URL}
+          alt="Two friend taking selfie while eating food"
+        ></img>
+        <div className="download-details">
+          <h2>Ordering is more</h2>
+          <h3><span className="styled-text">Personalized</span> & Instant</h3>
+          <p>Download the app for faster ordering</p>
         </div>
       </div>
       <div className="filter">
