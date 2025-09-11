@@ -10,6 +10,8 @@ import PopularRestaurantsCard from "./PopularRestaurantsCard";
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
 import { HOME_IMG_URL } from "../utils/constant.js";
+import DownloadSection from "./DownloadSection.js";
+
 
 const Body = () => {
   // State Variable
@@ -47,14 +49,11 @@ const Body = () => {
       </div>
       <div className="download-container">
         <img
+          className="image"
           src={HOME_IMG_URL}
           alt="Two friend taking selfie while eating food"
         ></img>
-        <div className="download-details">
-          <h2>Ordering is more</h2>
-          <h3><span className="styled-text">Personalized</span> & Instant</h3>
-          <p>Download the app for faster ordering</p>
-        </div>
+          <DownloadSection />
       </div>
       <div className="filter">
         <button

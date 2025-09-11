@@ -367,10 +367,10 @@ body {
   border-radius: 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.download-container img{
+.download-container .image{
   height: 350px;
   width: 350px;
   border-radius: 50%;
@@ -393,9 +393,8 @@ body {
   font-size: 34px;
   color: white;
   text-align: center;
-  padding: 10px 40px;
-  border-top-right-radius: 120px;
-  border-bottom-right-radius: 120px;
+  padding: 10px 60px;
+  border-radius: 120px;
   margin: 20px 0px 20px 0px;
   font-weight: normal;
 }
@@ -410,3 +409,11 @@ body {
   font-size: 18px;
   text-align: center;
 }
+
+.download-logo{
+  width: 200px;
+  height: 45px;
+  object-fit: cover;
+  object-position: center;
+}
+
