@@ -69,11 +69,6 @@ const Body = () => {
           Top Rated Restaurants
         </button>
       </div>
-      <div className="restaurant-container">
-        {listOfRestaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.id} resData={restaurant} />
-        ))}
-      </div>
     </div>
   );
 };
