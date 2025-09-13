@@ -7,7 +7,6 @@ import OffersCard from "./OffersCard";
 import OfferToggle from "./OfferToggle";
 import PopularCategoriesCard from "./PopularCategoriesCard";
 import PopularRestaurantsCard from "./PopularRestaurantsCard";
-import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
 import { HOME_IMG_URL } from "../utils/constant.js";
 import DownloadSection from "./DownloadSection.js";
