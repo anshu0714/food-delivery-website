@@ -5,7 +5,7 @@ export const HOME_IMG_URL =
   "https://plus.unsplash.com/premium_photo-1661427269032-146edd4487ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGZyaWVuZHMlMjBsYXVnaGluZyUyMHVzaW5nJTIwbW9iaWxlfGVufDB8fDB8fHww";
 
 export const GOOGLE_PLAY_STORE_ICON =
-  "https://logowik.com/content/uploads/images/google-play-badge-english-get-it-on-google-play7825.logowik.com.webp";
+  "https://img.freepik.com/premium-vector/available-app-store-get-it-google-play-buttons-go-app-stores-white-background-logotype-logo-ios-android-applications-download-install-user-editorial_661108-8070.jpg?w=2000";
 
 export const HERO_IMAGE =
   "https://images.pexels.com/photos/7680089/pexels-photo-7680089.jpeg";
