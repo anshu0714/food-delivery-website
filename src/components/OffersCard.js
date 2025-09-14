@@ -1,5 +1,6 @@
 const OffersCard = ({ offers }) => {
   const { image, name, offer, category } = offers;
+  
   return (
     <div className="offers-card">
       <img src={image} alt={name} className="offer-image" />

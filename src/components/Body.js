@@ -11,10 +11,15 @@ import { useState } from "react";
 import { HOME_IMG_URL } from "../utils/constant.js";
 import DownloadSection from "./DownloadSection.js";
 
-
 const Body = () => {
+  const allCategories = [...new Set(offersList.map((item) => item.type))];
+  const firstCategory = allCategories[0];
+
   // State Variable
   const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+  const [filteredOffers, setFilteredOffers] = useState(
+    offersList.filter((offer) => offer.type === firstCategory)
+  );
 
   return (
     <div className="body">
@@ -22,10 +27,10 @@ const Body = () => {
       <div className="offers-section">
         <div className="offer-heading">
           <h2>Up to -40% 🎊 Exclusive deals</h2>
-          <OfferToggle />
+          <OfferToggle onCategoryChange={setFilteredOffers} />
         </div>
         <div className="offers-container">
-          {offersList.map((offer) => (
+          {filteredOffers.map((offer) => (
             <OffersCard key={offer.id} offers={offer} />
           ))}
         </div>
@@ -52,7 +57,7 @@ const Body = () => {
           src={HOME_IMG_URL}
           alt="Two friend taking selfie while eating food"
         ></img>
-          <DownloadSection />
+        <DownloadSection />
       </div>
       <div className="filter">
         <button
