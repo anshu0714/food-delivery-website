@@ -59,19 +59,23 @@ const Body = () => {
         ></img>
         <DownloadSection />
       </div>
-      <div className="filter">
-        <button
-          className="filter-btn"
-          type="button"
-          onClick={() => {
-            const filteredList = listOfRestaurants.filter(
-              (res) => res.star > 4.5
-            );
-            setListOfRestaurants(filteredList);
-          }}
-        >
-          Top Rated Restaurants
-        </button>
+      <div className="partner-container">
+        <div className="partners-card card-partner">
+          <p className="tag">Earn more with lower fees</p>
+          <p className="tagline">Signup as a business</p>
+          <h3 className="heading">Partner With Us</h3>
+          <button className="partner-button" type="button">
+            Get Started
+          </button>
+        </div>
+        <div className="partners-card card-ride">
+          <p className="tag">Avail exclusive pers</p>
+          <p className="tagline">Signup as a rider</p>
+          <h3 className="heading">Ride With Us</h3>
+          <button className="partner-button" type="button">
+            Get Started
+          </button>
+        </div>
       </div>
     </div>
   );

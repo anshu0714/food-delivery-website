@@ -94,14 +94,14 @@ body {
   font-size: 12px;
 }
 
-.hero-image{
+.hero-image {
   z-index: 2;
   display: flex;
   min-height: 400px;
   align-items: end;
 }
 
-.hero-image img{
+.hero-image img {
   width: 400px;
   height: 300px;
   border-radius: 20px;
@@ -436,7 +436,7 @@ body {
 .download-details p {
   font-size: 18px;
   text-align: center;
-  margin: 10px
+  margin: 10px;
 }
 
 .download-logo {
@@ -444,4 +444,46 @@ body {
   height: 150px;
   object-fit: contain;
   border-radius: 20px;
+}
+
+/* ===== Partner Container Section ===== */
+.partner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px;
+  gap: 20px;
+}
+
+.partners-card {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  min-height: 400px;
+  border-radius: 12px;
+}
+
+.partners-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(3, 8, 21, 0.19) 58%,
+    rgba(3, 8, 31, 0.89) 100%
+  );
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.card-partner {
+  background-image: url(https://images.pexels.com/photos/6050329/pexels-photo-6050329.jpeg);
+}
+
+.card-ride {
+  background-image: url(https://images.pexels.com/photos/7363052/pexels-photo-7363052.jpeg);
 }
