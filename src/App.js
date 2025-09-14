@@ -3,10 +3,10 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 
 const App = () => (
-  <div>
+  <>
     <Header />
     <Body />
-  </div>
+  </>
 );
 
 const functionalRoot = ReactDOM.createRoot(document.getElementById("root"));

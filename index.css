@@ -58,13 +58,23 @@ body {
 
 /* ===== Hero Section ===== */
 .hero {
-  background-color: #fafafa;
-  margin-top: 20px;
+  background-color: #f6f6f6;
   min-height: 400px;
   padding: 10px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  min-height: 400px;
+  padding: 10px 40px;
+  right: 0;
+  border-top-left-radius: 200px;
+  background-color: #fc8a06;
 }
 
 .tag-line {
@@ -82,6 +92,20 @@ body {
 
 .sub-title {
   font-size: 12px;
+}
+
+.hero-image{
+  z-index: 2;
+  display: flex;
+  min-height: 400px;
+  align-items: end;
+}
+
+.hero-image img{
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== Postcode Search ===== */
@@ -124,6 +148,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   min-width: 240px;
+  z-index: 2;
 }
 
 .review h4 {
@@ -314,13 +339,13 @@ body {
   margin: 10px 0px;
 }
 
-.popular-details .category{
+.popular-details .category {
   margin: 0px;
   font-weight: bold;
   font-size: 14px;
 }
 
-.popular-details .number{
+.popular-details .number {
   margin: 0px;
   font-size: 12px;
   font-weight: normal;
@@ -361,35 +386,35 @@ body {
 }
 
 /* ===== Download Container Section ===== */
-.download-container{
+.download-container {
   margin: 30px;
   min-height: 400px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.download-container .image{
+.download-container .image {
   height: 350px;
   width: 350px;
   border-radius: 50%;
 }
 
-.download-details{
+.download-details {
   margin-left: 30px;
 }
 
-.download-details h2{
+.download-details h2 {
   font-size: 48px;
   font-weight: 800;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
   text-align: center;
 }
 
-.download-details h3{
+.download-details h3 {
   background-color: #000000;
   font-size: 34px;
   color: white;
@@ -400,21 +425,19 @@ body {
   font-weight: normal;
 }
 
-
-.styled-text{
+.styled-text {
   color: #fc8a06;
   text-decoration: underline;
 }
 
-.download-details p{
+.download-details p {
   font-size: 18px;
   text-align: center;
 }
 
-.download-logo{
+.download-logo {
   width: 200px;
   height: 45px;
   object-fit: cover;
   object-position: center;
 }
-

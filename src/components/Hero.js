@@ -1,3 +1,6 @@
+import { HERO_IMAGE } from "../utils/constant";
+import reviewsList from "../utils/reviewsList";
+
 const Hero = () => (
   <div className="hero">
     <div className="hero-text">
@@ -20,22 +23,20 @@ const Hero = () => (
         </button>
       </div>
     </div>
+    <div className="hero-image">
+      <img src={HERO_IMAGE} alt="A woman eating pizza"></img>
+    </div>
     <div className="hero-left">
-      <div className="review">
-        <h4>Review</h4>
-        <p>John D.</p>
-        <p>“Great food and quick delivery!”</p>
-      </div>
-      <div className="review">
-        <h4>Review</h4>
-        <p>Sarah K.</p>
-        <p>“Loved the flavors, will order again.”</p>
-      </div>
-      <div className="review">
-        <h4>Review</h4>
-        <p>Michael P.</p>
-        <p>“Packaging was neat and food was hot!”</p>
-      </div>
+      {reviewsList.map((review) => {
+        const { id, heading, name, comment } = review;
+        return (
+          <div className="review" key={id}>
+            <h4>{heading}</h4>
+            <p>{name}</p>
+            <p>{comment}</p>
+          </div>
+        );
+      })}
     </div>
   </div>
 );

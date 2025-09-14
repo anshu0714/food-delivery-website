@@ -6,3 +6,6 @@ export const HOME_IMG_URL =
 
 export const GOOGLE_PLAY_STORE_ICON =
   "https://logowik.com/content/uploads/images/google-play-badge-english-get-it-on-google-play7825.logowik.com.webp";
+
+export const HERO_IMAGE =
+  "https://images.pexels.com/photos/7680089/pexels-photo-7680089.jpeg";
