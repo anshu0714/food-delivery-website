@@ -1,7 +1,7 @@
 import { HERO_IMAGE } from "../utils/constant";
 import reviewsList from "../utils/reviewsList";
 
-const Hero = () => (
+const HeroSection = () => (
   <div className="hero">
     <div className="hero-text">
       <p className="tag-line">Order restaurant food, takeaway and groceries.</p>
@@ -41,4 +41,4 @@ const Hero = () => (
   </div>
 );
 
-export default Hero;
+export default HeroSection;

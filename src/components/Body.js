@@ -1,82 +1,19 @@
-import resList from "../utils/resList.js";
-import popularRestaurants from "../utils/popularRestaurants.js";
-import popularCategories from "../utils/popularCategories.js";
-import offersList from "../utils/offersList.js";
-import Hero from "./Hero";
-import OffersCard from "./OffersCard";
-import OfferToggle from "./OfferToggle";
-import PopularCategoriesCard from "./PopularCategoriesCard";
-import PopularRestaurantsCard from "./PopularRestaurantsCard";
-import { useState } from "react";
-import { HOME_IMG_URL } from "../utils/constant.js";
 import DownloadSection from "./DownloadSection.js";
+import PartnerSection from "./PartnerSection.js";
+import OffersSection from "./OffersSection.js";
+import PopularCategoriesSection from "./PopularCategoriesSection.js";
+import PopularRestaurantsSection from "./PopularRestaurantsSection.js";
+import HeroSection from "./HeroSection.js";
 
 const Body = () => {
-  const allCategories = [...new Set(offersList.map((item) => item.type))];
-  const firstCategory = allCategories[0];
-
-  // State Variable
-  const [listOfRestaurants, setListOfRestaurants] = useState(resList);
-  const [filteredOffers, setFilteredOffers] = useState(
-    offersList.filter((offer) => offer.type === firstCategory)
-  );
-
   return (
     <div className="body">
-      <Hero />
-      <div className="offers-section">
-        <div className="offer-heading">
-          <h2>Up to -40% 🎊 Exclusive deals</h2>
-          <OfferToggle onCategoryChange={setFilteredOffers} />
-        </div>
-        <div className="offers-container">
-          {filteredOffers.map((offer) => (
-            <OffersCard key={offer.id} offers={offer} />
-          ))}
-        </div>
-      </div>
-      <div className="popular-categories">
-        <h2>Popular Categories 🤩</h2>
-        <div className="popular-container">
-          {popularCategories.map((popular) => (
-            <PopularCategoriesCard key={popular.id} popular={popular} />
-          ))}
-        </div>
-      </div>
-      <div className="popular-restaurants">
-        <h2>Popular Restaurants</h2>
-        <div className="popular-res-container">
-          {popularRestaurants.map((popular) => (
-            <PopularRestaurantsCard key={popular.id} popular={popular} />
-          ))}
-        </div>
-      </div>
-      <div className="download-container">
-        <img
-          className="image"
-          src={HOME_IMG_URL}
-          alt="Two friend taking selfie while eating food"
-        ></img>
-        <DownloadSection />
-      </div>
-      <div className="partner-container">
-        <div className="partners-card card-partner">
-          <p className="tag">Earn more with lower fees</p>
-          <p className="tagline">Signup as a business</p>
-          <h3 className="heading">Partner With Us</h3>
-          <button className="partner-button" type="button">
-            Get Started
-          </button>
-        </div>
-        <div className="partners-card card-ride">
-          <p className="tag">Avail exclusive pers</p>
-          <p className="tagline">Signup as a rider</p>
-          <h3 className="heading">Ride With Us</h3>
-          <button className="partner-button" type="button">
-            Get Started
-          </button>
-        </div>
-      </div>
+      <HeroSection />
+      <OffersSection />
+      <PopularCategoriesSection />
+      <PopularRestaurantsSection />
+      <DownloadSection />
+      <PartnerSection />
     </div>
   );
 };
