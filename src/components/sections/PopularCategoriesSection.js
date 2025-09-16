@@ -1,5 +1,5 @@
-import popularCategories from "../utils/popularCategories";
-import PopularCategoriesCard from "./PopularCategoriesCard";
+import popularCategories from "../../utils/popularCategories";
+import PopularCategoriesCard from "../cards/PopularCategoriesCard";
 
 const PopularCategoriesSection = () => {
   return (

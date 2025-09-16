@@ -1,5 +1,5 @@
-import PopularRestaurantsCard from "./PopularRestaurantsCard";
-import popularRestaurants from "../utils/popularRestaurants";
+import PopularRestaurantsCard from "../cards/PopularRestaurantsCard";
+import popularRestaurants from "../../utils/popularRestaurants";
 
 const PopularRestaurantsSection = () => {
   return (

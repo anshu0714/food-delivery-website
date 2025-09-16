@@ -1,4 +1,4 @@
-import { LOGO_URL } from "../utils/constant";
+import { LOGO_URL } from "../../utils/constant";
 
 const Header = () => (
   <div className="header">
@@ -13,7 +13,7 @@ const Header = () => (
         <li>Restaurants</li>
         <li>Track Order</li>
       </ul>
-      <button className="login-btn" type="log-in">
+      <button className="login-btn" type="button">
         Log In / Sign Up
       </button>
     </div>

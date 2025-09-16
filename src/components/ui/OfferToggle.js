@@ -1,5 +1,5 @@
 import { useState } from "react";
-import offersList from "../utils/offersList";
+import offersList from "../../utils/offersList";
 
 const OfferToggle = ({ onCategoryChange }) => {
   const allCategories = [...new Set(offersList.map((item) => item.type))];
