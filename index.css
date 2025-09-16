@@ -479,11 +479,9 @@ body {
   border-radius: 12px;
   z-index: 2;
 }
-
-.card-partner {
-  background-image: url(https://images.pexels.com/photos/6050329/pexels-photo-6050329.jpeg);
-}
-
 .card-ride {
   background-image: url(https://images.pexels.com/photos/7363052/pexels-photo-7363052.jpeg);
+}
+.card-partner {
+  background-image: url(https://images.pexels.com/photos/6050329/pexels-photo-6050329.jpeg);
 }
