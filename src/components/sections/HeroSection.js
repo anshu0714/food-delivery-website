@@ -1,4 +1,4 @@
-import { HERO_IMAGE } from "../../utils/constant";
+import { HERO_IMAGE } from "../../utils/constants";
 import reviewsList from "../../utils/reviewsList";
 
 const HeroSection = () => (

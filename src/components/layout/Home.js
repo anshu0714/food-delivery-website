@@ -5,7 +5,7 @@ import PopularCategoriesSection from "../sections/PopularCategoriesSection.js";
 import PopularRestaurantsSection from "../sections/PopularRestaurantsSection.js";
 import HeroSection from "../sections/HeroSection.js";
 
-const Body = () => {
+const Home = () => {
   return (
     <div className="body">
       <HeroSection />
@@ -18,4 +18,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default Home;

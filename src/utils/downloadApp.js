@@ -1,4 +1,4 @@
-import { APPLE_PLAY_STORE_ICON, GOOGLE_PLAY_STORE_ICON } from "./constant";
+import { APPLE_PLAY_STORE_ICON, GOOGLE_PLAY_STORE_ICON } from "./constants";
 
 const downloadApp = [
   {

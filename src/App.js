@@ -1,11 +1,11 @@
 import ReactDOM from "react-dom/client";
 import Header from "./components/layout/Header";
-import Body from "./components/layout/Body";
+import Home from "./components/layout/Home";
 
 const App = () => (
   <>
     <Header />
-    <Body />
+    <Home />
   </>
 );
 
