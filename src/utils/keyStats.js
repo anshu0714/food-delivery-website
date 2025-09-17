@@ -20,3 +20,5 @@ const keyStats = [
     value: "17,457+",
   },
 ];
+
+export default keyStats;

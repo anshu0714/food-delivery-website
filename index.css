@@ -451,7 +451,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 30px;
-  padding-top: 20px;
+  padding-top: 30px;
   gap: 20px;
 }
 
@@ -489,7 +489,7 @@ body {
   background-image: url(https://images.pexels.com/photos/6050329/pexels-photo-6050329.jpeg);
 }
 
-.tag{
+.tag {
   position: absolute;
   top: 0px;
   left: 40px;
@@ -509,12 +509,12 @@ body {
 }
 
 .tagline {
-  color:#FC8A06;
+  color: #fc8a06;
   font-size: 14px;
   margin: 0;
 }
 
-.heading{
+.heading {
   color: #ffffff;
   font-size: 36px;
   margin: 0;
@@ -530,4 +530,37 @@ body {
   font-size: 14px;
   color: #ffffff;
   cursor: pointer;
+}
+
+/* ===== Partner Container Section ===== */
+.key-stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px;
+  background-color: #fc8a06;
+  border-radius: 12px;
+  padding: 20px 40px;
+  color: white;
+}
+
+.key-stat {
+  border-left: 1px solid #ffffff;
+}
+
+.key-stat:first-child {
+  border-left: none;
+}
+
+.value {
+  font-size: 42px;
+  font-weight: 500;
+  margin: 5px;
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
 }
