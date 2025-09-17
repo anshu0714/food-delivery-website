@@ -451,6 +451,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 30px;
+  padding-top: 20px;
   gap: 20px;
 }
 
@@ -458,7 +459,7 @@ body {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20px;
+  padding: 0px;
   min-height: 400px;
   border-radius: 12px;
 }
@@ -477,11 +478,56 @@ body {
     rgba(3, 8, 31, 0.89) 100%
   );
   border-radius: 12px;
-  z-index: 2;
+  z-index: 1;
 }
+
 .card-ride {
   background-image: url(https://images.pexels.com/photos/7363052/pexels-photo-7363052.jpeg);
 }
+
 .card-partner {
   background-image: url(https://images.pexels.com/photos/6050329/pexels-photo-6050329.jpeg);
+}
+
+.tag{
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  margin: 0px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 0px 0px 12px 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 10;
+}
+
+.tagline {
+  color:#FC8A06;
+  font-size: 14px;
+  margin: 0;
+}
+
+.heading{
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.partner-button {
+  background-color: #fc8a06;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
 }
