@@ -194,6 +194,42 @@ body {
   width: 100%;
 }
 
+/* ===== Customers Section ===== */
+.customer-section {
+  margin: 60px 30px;
+}
+
+.customer-containers {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 100%;
+  gap: 20px;
+}
+
+.customer-card {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-card img {
+  width: 50%;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.customer-card h4 {
+  margin: 4px;
+  text-align: center;
+}
+
+.customer-card p {
+  font-size: 12px;
+  text-align: center;
+  margin: 4px;
+}
+
 /* ===== Offers Section ===== */
 .offers-section {
   margin-top: 20px;
