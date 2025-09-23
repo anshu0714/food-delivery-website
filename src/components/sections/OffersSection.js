@@ -11,6 +11,7 @@ const OffersSection = () => {
   const [filteredOffers, setFilteredOffers] = useState(
     offersList.filter((offer) => offer.type === firstCategory)
   );
+
   return (
     <div className="offers-section">
       <div className="offer-heading">
