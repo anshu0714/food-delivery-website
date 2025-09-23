@@ -194,42 +194,6 @@ body {
   width: 100%;
 }
 
-/* ===== Customers Section ===== */
-.customer-section {
-  margin: 60px 30px;
-}
-
-.customer-containers {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  width: 100%;
-  gap: 20px;
-}
-
-.customer-card {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.customer-card img {
-  width: 50%;
-  margin: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.customer-card h4 {
-  margin: 4px;
-  text-align: center;
-}
-
-.customer-card p {
-  font-size: 12px;
-  text-align: center;
-  margin: 4px;
-}
-
 /* ===== Offers Section ===== */
 .offers-section {
   margin-top: 20px;
@@ -685,4 +649,79 @@ body {
 .footer-items a {
   color: #ffffff;
   text-decoration: none;
+}
+
+/* ===== Customer Section ===== */
+
+.customer-section {
+  margin: 60px 30px;
+}
+
+.customer-section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.customer-containers {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.customer-card,
+.shimmer-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.customer-card img,
+.shimmer-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.customer-card p {
+  text-align: center;
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+/* Shimmer specific */
+.shimmer-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.shimmer-img {
+  background: linear-gradient(to right, #e0e0e0 0%, #f5f5f5 50%, #e0e0e0 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.shimmer-line {
+  width: 60px;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #e0e0e0 0%, #f5f5f5 50%, #e0e0e0 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.shimmer-line.short {
+  width: 40px;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }

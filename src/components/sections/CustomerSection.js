@@ -15,13 +15,14 @@ const CustomerSection = () => {
     console.log(json.results);
   };
 
-  if (customersList.length === 0) {
-    return <Shimmer />;
-  }
-
   return (
     <div className="customer-section">
-      <h2 className="customer-section-heading">Loved by Foodies Everywhere 🍔</h2>
+      <h2 className="customer-section-heading">
+        Loved by Foodies Everywhere 🍔
+      </h2>
+
+      {customersList.length === 0 && <Shimmer />}
+
       <div className="customer-containers">
         {customersList.map((customer) => {
           return (
