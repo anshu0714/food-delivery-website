@@ -12,7 +12,6 @@ const CustomerSection = () => {
     const data = await fetch("https://randomuser.me/api/?results=8");
     const json = await data.json();
     setCustomersList(json.results);
-    console.log(json.results);
   };
 
   return (

@@ -688,6 +688,11 @@ body {
   margin: 0 auto;
 }
 
+.customer-card h4 {
+  text-align: center;
+  margin: 2px 0;
+}
+
 .customer-card p {
   text-align: center;
   margin: 2px 0;
