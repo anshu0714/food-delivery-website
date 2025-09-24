@@ -1,11 +1,10 @@
 {
-  "name": "episode_4",
+  "name": "food_delivery",
   "version": "1.0.0",
-  "description": "Food delivery app",
+  "description": "Food Delivery Website",
   "keywords": [
-    "Food",
-    "Delivery",
-    "App"
+    "food",
+    "delivery"
   ],
   "homepage": "https://github.com/anshu0714/food-delivery-website#readme",
   "bugs": {
@@ -23,7 +22,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "parcel": "^2.15.4"
+    "parcel": "^2.16.0"
   },
   "dependencies": {
     "react": "^19.1.1",
