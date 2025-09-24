@@ -9,3 +9,6 @@ export const GOOGLE_PLAY_STORE_ICON =
 
 export const HERO_IMAGE =
   "https://images.pexels.com/photos/7680089/pexels-photo-7680089.jpeg";
+
+export const CLOUD_IMAGE_URL =
+  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1661202538/";
