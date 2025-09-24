@@ -6,6 +6,7 @@ import PopularRestaurantsSection from "../sections/PopularRestaurantsSection.js"
 import HeroSection from "../sections/HeroSection.js";
 import KeyStatsSection from "../sections/KeyStatsSection.js";
 import CustomerSection from "../sections/CustomerSection.js";
+import Restaurants from "./Restaurants.js";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <DownloadSection />
       <PartnerSection />
       <KeyStatsSection />
+      <Restaurants />
     </div>
   );
 };
