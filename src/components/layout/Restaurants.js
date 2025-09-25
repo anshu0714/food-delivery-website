@@ -32,7 +32,18 @@ const Restaurants = () => {
             setSearchText(e.target.value);
           }}
         />
-        <button type="submit" className="search-btn">
+        <button
+          type="submit"
+          className="search-btn"
+          onClick={() => {
+            const filteredRestaurants = restaurantList.filter((res) => {
+              return res.info.name
+                .toLowerCase()
+                .includes(searchText.toLowerCase());
+            });
+            setRestaurantList(filteredRestaurants);
+          }}
+        >
           Search
         </button>
       </div>
