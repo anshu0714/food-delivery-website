@@ -747,3 +747,9 @@ body {
   width: 100%;
   height: 200px;
 }
+
+.search-bar {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
