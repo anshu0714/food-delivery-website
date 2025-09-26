@@ -5,15 +5,17 @@ import { CLOUD_IMAGE_URL } from "../../utils/constants";
 
 const Restaurants = () => {
   const [restaurantList, setRestaurantList] = useState([]);
+  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   const fetchRestaurants = async () => {
     let data = await fetch(RES_API);
     let json = await data.json();
-    setRestaurantList(
+    let result =
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants || []
-    );
+        ?.restaurants || [];
+    setRestaurantList(result);
+    setFilteredRestaurants(result);
     console.log(restaurantList);
   };
 
@@ -41,15 +43,15 @@ const Restaurants = () => {
                 .toLowerCase()
                 .includes(searchText.toLowerCase());
             });
-            setRestaurantList(filteredRestaurants);
+            setFilteredRestaurants(filteredRestaurants);
           }}
         >
           Search
         </button>
       </div>
       <div className="restaurants-container">
-        {restaurantList.length === 0 && <Shimmer />}
-        {restaurantList.map((restaurant) => {
+        {filteredRestaurants.length === 0 && <Shimmer />}
+        {filteredRestaurants.map((restaurant) => {
           return (
             <div key={restaurant.info.id} className="restaurant-card">
               <img
