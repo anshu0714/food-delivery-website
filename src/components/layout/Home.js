@@ -19,7 +19,6 @@ const Home = () => {
       <DownloadSection />
       <PartnerSection />
       <KeyStatsSection />
-      <Restaurants />
     </div>
   );
 };
