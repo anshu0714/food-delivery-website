@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Shimmer from "../ui/Shimmer";
 import { RES_API } from "../../utils/apiList";
 import { CLOUD_IMAGE_URL } from "../../utils/constants";
+import RestaurantCardShimmer from "../ui/RestaurantCardShimmer";
 
 const Restaurants = () => {
   const [restaurantList, setRestaurantList] = useState([]);
@@ -50,7 +50,7 @@ const Restaurants = () => {
         </button>
       </div>
       <div className="restaurants-container">
-        {filteredRestaurants.length === 0 && <Shimmer />}
+        {filteredRestaurants.length === 0 && <RestaurantCardShimmer />}
         {filteredRestaurants.map((restaurant) => {
           return (
             <div key={restaurant.info.id} className="restaurant-card">
