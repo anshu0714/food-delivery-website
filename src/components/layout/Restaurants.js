@@ -59,10 +59,10 @@ const Restaurants = () => {
                 alt={restaurant.info.name}
                 className="restaurant-image"
               />
-              <h3>{restaurant.info.name}</h3>
-              <p>Rating: {restaurant.info.avgRating}</p>
-              <p>{restaurant.info.cuisines.join(", ")}</p>
-              <p>{restaurant.info.costForTwo}</p>
+              <h3 className="restaurant-name">{restaurant.info.name}</h3>
+              <p className="restaurant-rating">Rating: {restaurant.info.avgRating}</p>
+              <p className="restaurant-cuisines">{restaurant.info.cuisines.join(", ")}</p>
+              <p className="restaurant-pricing">{restaurant.info.costForTwo}</p>
             </div>
           );
         })}

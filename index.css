@@ -758,6 +758,13 @@ body {
   height: 200px;
 }
 
+.restaurant-name,
+.restaurant-rating,
+.restaurant-pricing,
+.restaurant-cuisines {
+  margin: 5px;
+}
+
 .search-bar {
   display: flex;
   gap: 10px;
@@ -789,16 +796,11 @@ body {
   padding: 10px;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .shimmer {
-  background: linear-gradient(
-    90deg,
-    #e0e0e0 25%,
-    #f6f6f6 37%,
-    #e0e0e0 63%
-  );
+  background: linear-gradient(90deg, #e0e0e0 25%, #f6f6f6 37%, #e0e0e0 63%);
   background-size: 400% 100%;
   animation: shimmer 1.4s infinite;
   border-radius: 6px;
@@ -831,7 +833,6 @@ body {
     background-position: 400px 0;
   }
 }
-
 
 /* ===== Error Page ===== */
 .error-page {
