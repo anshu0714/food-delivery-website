@@ -29,7 +29,7 @@ const Restaurants = () => {
   };
 
   return (
-    <div className="restaurants">
+    <div className="res">
       <div className="search-bar">
         <input
           type="text"
@@ -51,17 +51,17 @@ const Restaurants = () => {
         </button>
       </div>
 
-      <div className="restaurants-container">
+      <div className="res-container">
         {filteredRestaurants.length === 0 && <RestaurantCardShimmer />}
         {filteredRestaurants.map((restaurant) => {
           const info = restaurant.info;
           return (
-            <div key={info.id} className="restaurant-card">
+            <div key={info.id} className="res-card">
               <div className="image-wrapper">
                 <img
                   src={CLOUD_IMAGE_URL + info.cloudinaryImageId}
                   alt={info.name}
-                  className="restaurant-image"
+                  className="res-image"
                 />
                 <span
                   className="rating-badge"
@@ -70,8 +70,8 @@ const Restaurants = () => {
                   ⭐ {info.avgRating}
                 </span>
               </div>
-              <div className="restaurant-content">
-                <h3 className="restaurant-name">{info.name}</h3>
+              <div className="res-content">
+                <h3 className="res-name">{info.name}</h3>
                 <div className="cuisine-container">
                   {info.cuisines.slice(0, 3).map((cuisine, index) => (
                     <span key={index} className="cuisine-chip">
@@ -79,7 +79,7 @@ const Restaurants = () => {
                     </span>
                   ))}
                 </div>
-                <p className="restaurant-pricing">{info.costForTwo}</p>
+                <p className="res-pricing">{info.costForTwo}</p>
               </div>
             </div>
           );
