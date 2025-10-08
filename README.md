@@ -14,6 +14,14 @@ The UI is inspired by a **Figma Community design**, and the project uses a **sel
 
 ---
 
+## 🧰 Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript (ES6+)
+- **Bundler:** Parcel
+- **UI:** Figma Community inspired design
+- **Other Tools:** Prettier, ESLint
+
+
 ## 🛠️ Installation & Setup
 
 1. **Clone the repo**
