@@ -21,6 +21,7 @@ The UI is inspired by a **Figma Community design**, and the project uses a **sel
 - **UI:** Figma Community inspired design
 - **Other Tools:** Prettier, ESLint
 
+---
 
 ## 🛠️ Installation & Setup
 
