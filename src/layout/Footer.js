@@ -1,5 +1,5 @@
-import { LOGO_URL } from "../../utils/constants";
-import FooterBottom from "../sections/FooterBottom";
+import { LOGO_URL } from "../utils/constants";
+import FooterBottom from "./FooterBottom";
 
 const Footer = function () {
   return (

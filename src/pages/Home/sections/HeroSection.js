@@ -1,5 +1,5 @@
-import { HERO_IMAGE } from "../../utils/constants";
-import reviewsList from "../../utils/reviewsList";
+import { HERO_IMAGE } from "../../../utils/constants";
+import reviewsList from "../../../utils/reviewsList";
 
 const HeroSection = () => (
   <div className="hero">

@@ -1,7 +1,7 @@
-import offersList from "../../utils/offersList";
+import offersList from "../../../utils/offersList";
 import { useState } from "react";
-import OfferToggle from "../ui/OfferToggle";
-import OffersCard from "../cards/OffersCard";
+import OfferToggle from "../../../components/ui/OfferToggle";
+import OffersCard from "../../../components/cards/OffersCard";
 
 const OffersSection = () => {
   const allCategories = [...new Set(offersList.map((item) => item.type))];

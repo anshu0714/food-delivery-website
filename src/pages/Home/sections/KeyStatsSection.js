@@ -1,4 +1,4 @@
-import keyStats from "../../utils/keyStats";
+import keyStats from "../../../utils/keyStats";
 
 const KeyStatsSection = () => {
   return (

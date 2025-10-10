@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Shimmer from "../ui/Shimmer";
+import Shimmer from "../../../components/ui/Shimmer";
 
 const CustomerSection = () => {
   const [customersList, setCustomersList] = useState([]);

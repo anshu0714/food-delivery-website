@@ -1,4 +1,4 @@
-import { GOOGLE_PLAY_STORE_ICON, HOME_IMG_URL } from "../../utils/constants";
+import { GOOGLE_PLAY_STORE_ICON, HOME_IMG_URL } from "../../../utils/constants";
 
 const DownloadSection = () => {
   return (

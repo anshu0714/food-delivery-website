@@ -1,4 +1,4 @@
-import partnerList from "../../utils/partnerList";
+import partnerList from "../../../utils/partnerList";
 
 const PartnerSection = () => {
   return (

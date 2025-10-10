@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { RES_API } from "../../utils/apiList";
 import { CLOUD_IMAGE_URL } from "../../utils/constants";
-import RestaurantCardShimmer from "../ui/RestaurantCardShimmer";
+import RestaurantCardShimmer from "../../components/ui/RestaurantCardShimmer";
 
 const Restaurants = () => {
   const [restaurantList, setRestaurantList] = useState([]);

@@ -1,13 +1,13 @@
 import ReactDOM from "react-dom/client";
-import Header from "./components/layout/Header";
-import Home from "./components/layout/Home";
-import Footer from "./components/layout/Footer";
+import Header from "./layout/Header";
+import Home from "./pages/Home/Home";
+import Footer from "./layout/Footer";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import BrowseMenu from "./components/layout/BrowseMenu";
-import SpecialOffers from "./components/layout/SpecialOffers";
-import Restaurants from "./components/layout/Restaurants";
-import TrackOrder from "./components/layout/TrackOrder";
-import ErrorPage from "./components/layout/ErrorPage";
+import BrowseMenu from "./pages/BrowseMenu/BrowseMenu";
+import SpecialOffers from "./pages/SpecialOffers/SpecialOffers";
+import Restaurants from "./pages/Restaurants/Restaurants";
+import TrackOrder from "./pages/TrackOrder/TrackOrder";
+import ErrorPage from "./layout/ErrorPage";
 
 const App = () => {
   return (
