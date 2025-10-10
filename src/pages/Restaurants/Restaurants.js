@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { RES_API } from "../../utils/apiList";
 import { CLOUD_IMAGE_URL } from "../../utils/constants";
 import RestaurantCardShimmer from "../../components/ui/RestaurantCardShimmer";
+import SearchBar from "./sections/SearchBar";
 
 const Restaurants = () => {
   const [restaurantList, setRestaurantList] = useState([]);
@@ -22,34 +23,26 @@ const Restaurants = () => {
     fetchRestaurants();
   }, []);
 
+  const handleSearch = () => {
+    const filtered = restaurantList.filter((res) =>
+      res.info.name.toLowerCase().includes(searchText.toLowerCase())
+    );
+    setFilteredRestaurants(filtered);
+  };
+
   const getRatingColor = (rating) => {
-    if (rating >= 4) return "#22c55e"; // green
-    if (rating >= 3) return "#facc15"; // yellow
-    return "#ef4444"; // red
+    if (rating >= 4) return "#22c55e";
+    if (rating >= 3) return "#facc15";
+    return "#ef4444";
   };
 
   return (
     <div className="res">
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Search restaurants..."
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        />
-        <button
-          type="submit"
-          className="search-btn"
-          onClick={() => {
-            const filtered = restaurantList.filter((res) =>
-              res.info.name.toLowerCase().includes(searchText.toLowerCase())
-            );
-            setFilteredRestaurants(filtered);
-          }}
-        >
-          Search
-        </button>
-      </div>
+      <SearchBar
+        searchText={searchText}
+        setSearchText={setSearchText}
+        onSearch={handleSearch}
+      />
 
       <div className="res-container">
         {filteredRestaurants.length === 0 && <RestaurantCardShimmer />}
