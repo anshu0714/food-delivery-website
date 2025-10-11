@@ -9,7 +9,7 @@ const ErrorPage = () => {
       <h1 className="error-title">Oops!</h1>
       <p className="error-message">Sorry, an unexpected error occurred.</p>
       <p className="error-details">
-        <i>{error.statusText || error.message}</i>
+        <i>{error.statusText || error.message || "Unknown error"}</i>
       </p>
       <Link to="/" className="error-home-btn">
         Go Back Home
