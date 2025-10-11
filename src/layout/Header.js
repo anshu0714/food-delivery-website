@@ -6,9 +6,9 @@ const Header = () => {
   const [buttonText, setButtonText] = useState("Log In / Sign Up");
 
   function handleClick() {
-    buttonText == "Log In / Sign Up"
-      ? setButtonText("Log Out")
-      : setButtonText("Log In / Sign Up");
+    setButtonText(
+      buttonText === "Log In / Sign Up" ? "Log Out" : "Log In / Sign Up"
+    );
   }
 
   return (
