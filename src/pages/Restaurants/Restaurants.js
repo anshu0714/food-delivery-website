@@ -3,6 +3,7 @@ import { RES_API } from "../../utils/apiList";
 import RestaurantCardShimmer from "../../components/ui/RestaurantCardShimmer";
 import SearchBar from "./sections/SearchBar";
 import RestaurantCard from "./sections/RestaurantCard";
+import HeroSection from "./sections/HeroSection";
 
 const Restaurants = () => {
   const [restaurantList, setRestaurantList] = useState([]);
@@ -32,6 +33,7 @@ const Restaurants = () => {
 
   return (
     <div className="res">
+      <HeroSection />
       <SearchBar
         searchText={searchText}
         setSearchText={setSearchText}
