@@ -8,6 +8,7 @@ import SpecialOffers from "./pages/SpecialOffers/SpecialOffers";
 import Restaurants from "./pages/Restaurants/Restaurants";
 import TrackOrder from "./pages/TrackOrder/TrackOrder";
 import ErrorPage from "./layout/ErrorPage";
+import RestaurantView from "./pages/Restaurants/RestaurantView";
 
 const App = () => {
   return (
@@ -39,6 +40,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants",
         element: <Restaurants />,
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestaurantView />,
       },
       {
         path: "/track-order",
