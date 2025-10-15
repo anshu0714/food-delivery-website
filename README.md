@@ -5,6 +5,12 @@ The UI is inspired by a **Figma Community design**, and the project uses a **sel
 
 ---
 
+## 🗒️To-do:
+- Design hero section of restaurant page.
+- Create Restaurant Details Page and design it.
+
+---
+
 ## 🚀 Features
 
 - Clean, responsive UI (designed from Figma Community)
