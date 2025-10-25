@@ -10,6 +10,7 @@ The UI is inspired by a **Figma Community design**, and the project uses a **sel
 - Create Restaurant Details Page and design it.
 - Create api for the restaurant details page
 - Create Browse menu page
+- Make the pages responsive (to be implemented later using tailwind)
 ---
 
 ## 🚀 Features
