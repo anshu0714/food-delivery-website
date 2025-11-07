@@ -1,4 +1,4 @@
-# 🍔 Food Delivery App (Ongoing)
+# 🍔 Food Delivery (Ongoing)
 
 A modern **Food Delivery Web App** built from scratch using **Parcel** as the bundler.  
 The UI is inspired by a **Figma Community design**, and the project uses a **self-defined folder structure** (not created with Create React App or Next.js).
